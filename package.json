@@ -1,0 +1,34 @@
+{
+  "name": "react-ts-prj",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "bonree-charts": "http://10.241.150.42:8081/nexus/repository/npmhosted/bonree-charts/-/bonree-charts-0.4.26.tgz",
+    "bonree-design": "3.5.10",
+    "bonree-design-plus": "http://10.241.150.42:8081/nexus/repository/npmhosted/bonree-design-plus/-/bonree-design-plus-4.2.10-1.tgz",
+    "bonree-icons": "7.1.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "less": "^4.2.2",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}
