@@ -12,9 +12,6 @@
   "dependencies": {
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "bonree-charts": "http://10.241.150.42:8081/nexus/repository/npmhosted/bonree-charts/-/bonree-charts-0.4.26.tgz",
-    "bonree-design": "3.5.10",
-    "bonree-design-plus": "http://10.241.150.42:8081/nexus/repository/npmhosted/bonree-design-plus/-/bonree-design-plus-4.2.10-1.tgz",
     "bonree-icons": "7.1.13"
   },
   "devDependencies": {
