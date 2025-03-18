@@ -1,0 +1,182 @@
+@br-border-color-base: #d3d8df;
+@br-font-size-basic: 12px;
+@br-text-color: #172634;
+@baseBackgroundColor: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+input,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+textarea,
+article,
+aside,
+audio,
+canvas,
+figure,
+footer,
+header,
+mark,
+menu,
+nav,
+section,
+time,
+video {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, "Microsoft Yahei", PingFang, sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+blockquote {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  border: 0 none;
+}
+
+div,
+ul {
+  // 兼容火狐
+  scrollbar-color: @br-border-color-base transparent;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: @br-border-color-base;
+    border-radius: 3px;
+  }
+}
+
+body {
+  // font-family: 'Arial', 'PingFang SC', 'Microsoft Yahei', '微软雅黑';
+  min-width: 1263px;
+  height: 100vh;
+  margin: 0;
+  // 纵向滚动，不使用body滚动，使用div滚动
+  overflow-x: auto;
+  // 横向滚动，统一为body滚动
+  overflow-y: hidden;
+  font-size: @br-font-size-basic;
+  -webkit-font-smoothing: antialiased;
+  // 兼容火狐
+  scrollbar-color: @br-border-color-base transparent;
+  scrollbar-width: thin;
+  letter-spacing: 0.05em;
+  color: @br-text-color;
+  background-color: @baseBackgroundColor;
+
+  &.en_us {
+    letter-spacing: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: @br-border-color-base;
+    border-radius: 10px;
+  }
+
+  .bonree-layout {
+    background: @baseBackgroundColor;
+  }
+}
+
+.download-loading {
+  svg {
+    margin-top: 7px;
+    animation: loading-circle 1s infinite linear;
+  }
+}
+
+.loading-icon{
+  svg {
+    animation: loading-circle 1s infinite linear;
+  }
+}
+
+@keyframes loading-circle {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@supports selector(*::-webkit-scrollbar) {
+  * {
+    scrollbar-color: unset !important;
+    scrollbar-width: unset !important;
+  }
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
